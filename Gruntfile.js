@@ -1,4 +1,3 @@
-// @annotation:tour gruntfile
 
 module.exports = function(grunt) {
 
@@ -56,5 +55,3 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['clean', 'coffee']);
     // @annotation:/tour register
 };
-
-// @annotation:/tour gruntfile
