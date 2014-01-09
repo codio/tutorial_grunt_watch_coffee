@@ -18,8 +18,8 @@ class AttractionDemo extends Demo
         max = if full then 400 else 200
 
         for i in [0..max]
-
-            p = new Particle (Random 0.1, 14.0)
+ 
+            p = new Particle (Random 0.1, 3.0)
             p.setRadius p.mass * 4
      
 
