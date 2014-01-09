@@ -26,7 +26,7 @@ AttractionDemo = (function(_super) {
     max = full ? 400 : 200;
     _results = [];
     for (i = _i = 0; 0 <= max ? _i <= max : _i >= max; i = 0 <= max ? ++_i : --_i) {
-      p = new Particle(Random(0.1, 15.0));
+      p = new Particle(Random(0.1, 14.0));
       p.setRadius(p.mass * 4);
       p.moveTo(new Vector(Random(this.width), Random(this.height)));
       p.behaviours.push(attraction);

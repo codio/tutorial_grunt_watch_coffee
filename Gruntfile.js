@@ -44,12 +44,17 @@ module.exports = function(grunt) {
                 files: '**/*.coffee',
                 tasks: ['newer:coffee']
             }
-        }
+        }    
 
         // @annotation:/tour grunt-tasks
             
     });
     
+    grunt.event.on('watch', function(action, filepath, target) {
+        // Do something custom whenever a file changes
+        console.log('\nCUSTOM MESSAGE: Action=' + action + '  Path=' + filepath + '  Target=' + target);
+    } ); 
+
     // @annotation:tour load-tasks 
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
