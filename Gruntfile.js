@@ -6,25 +6,12 @@ module.exports = function(grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
 
-        // @annotation:/snippet task-clean        
+        // Remove compiled folder
         clean: {
             build: ['compiled']
         },
-        // @annotation:/snippet task-clean
         
-        // @annotation:snippet task-copy
-        copy: {
-            main: {
-                files: [{
-                    dest: 'compiled/',
-                    src: ['**'],
-                    cwd: 'source/',
-                    expand: true
-                }]
-            }
-        },
-        // @annotation:/snippet task-copy
-        
+        // @annotation:tour coffee
         coffee: {
             options: {
                 bare: true
@@ -38,35 +25,36 @@ module.exports = function(grunt) {
                 ext: '.js'
             },
         },
+        // @annotation:/tour coffee
 
+        // @annotation:tour watch
         watch: {
             app: {
                 files: '**/*.coffee',
                 tasks: ['newer:coffee']
             }
         }    
-
-        // @annotation:/tour grunt-tasks
+        // @annotation:/tour watch
             
     });
     
+    // @annotation:tour event
     grunt.event.on('watch', function(action, filepath, target) {
         // Do something custom whenever a file changes
         console.log('\nCUSTOM MESSAGE: Action=' + action + '  Path=' + filepath + '  Target=' + target);
     } ); 
+    // @annotation:/tour event
 
-    // @annotation:tour load-tasks 
+    // @annotation:tour load
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-coffee');  
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-newer');    
-    // @annotation:/tour load-tasks
+    // @annotation:/tour load
     
-    // @annotation:tour register-tasks
+    // @annotation:tour register
     grunt.registerTask('default', ['clean', 'coffee']);
-    // @annotation:/tour register-tasks
-
+    // @annotation:/tour register
 };
 
 // @annotation:/tour gruntfile
