@@ -19,9 +19,10 @@ class AttractionDemo extends Demo
 
         for i in [0..max]
 
-            p = new Particle (Random 0.1, 3.0)
+            p = new Particle (Random 0.1, 15.0)
             p.setRadius p.mass * 4
-
+ 
+    
             p.moveTo new Vector (Random @width), (Random @height)
 
             p.behaviours.push attraction

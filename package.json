@@ -1,0 +1,26 @@
+{
+  "name": "Coffee-Physics",
+  "version": "0.0.0",
+  "description": "Codio tutorial showing Grunt Watch based on Justin Windle's Coffeescript Phyiscs demo",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codio/tutorial_grunt_watch_coffee.git"
+  },
+  "author": "Freddy May, Justin Windle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codio/tutorial_grunt_watch_coffee/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-coffee": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-newer": "~0.6.0"
+  }
+}
