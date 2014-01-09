@@ -7,6 +7,14 @@ This is where all `.coffee` files are located. These will get compiled by Grunt 
 @annotation:file compiled
 Once Grunt has worked its magic, the compiled `.coffee` files get dumped in here.
 
+@annotation:file Gruntfile.js
+This is the file where Grunt tasks are configured. Take a look inside.
+
+###New to Grunt?
+If you are new to Grunt and are not familiar with a Grunt file, then please review our main Grunt tutorial. This can be found at 
+
+- [http://codio/codio/grunt-tutorial](http://codio/codio/grunt-tutorial)
+
 @annotation:tour introduction
 #Introduction
 
@@ -25,7 +33,7 @@ We are also going to show how our `watch` task can fire events that you can catc
 @annotation:tour files
 #Folders & Files
 ###Folders
-This project contains a bunch of `.coffee` files in the `source` folder. These needs to be compiled to javascript before it will run in the browser. You will see the `compiled` folder where these files are generated. If you take a peek, you will see that for each file in the `source` directory, there will be a corresponding `.js` file, compiled by Grunt.
+This project contains a bunch of `.coffee` files in the `source` folder. These need to be compiled to javascript before they will run in the browser. You will see the `compiled` folder where these files are generated. If you take a peek, you will see that for each file in the `source` directory, there will be a corresponding `.js` file, compiled by Grunt.
 
 Don't worry about the `deploy` folder. It contains the physics engine this demo uses.
 
