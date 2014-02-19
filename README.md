@@ -18,7 +18,7 @@ This project is ready to run in Codio. All you need to do is the following
 This Tutorial uses Codio Annotations, which gives you two ways of getting tutored
 
 1. Wherever you see a blue icon in the file tree or on a line of code (take a look at `Gruntfile.js`) you can click on it to get information
-1. Click on [`Tools->Annotations Tour`](http://boxes.preview.codiodev.com/fmay/tutorial-grunt-watch-coffee/tutorial) to get a guided tour.
+1. Click on `Tools->Annotations Tour` to get a guided tour.
 
 
 
