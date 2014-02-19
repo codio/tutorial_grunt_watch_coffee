@@ -13,7 +13,7 @@ This is the file where Grunt tasks are configured. Take a look inside.
 ###New to Grunt?
 If you are new to Grunt and are not familiar with a Grunt file, then please review our main Grunt tutorial. This can be found at 
 
-- [http://codio/codio/grunt-tutorial](http://codio/codio/grunt-tutorial)
+- [https://github.com/codio/tutorial_grunt_basic](https://github.com/codio/tutorial_grunt_basic)
 
 @annotation:tour introduction
 #Introduction
@@ -43,7 +43,7 @@ The only file that you really need to worry about is `index.html`. If you look o
 ###New to Grunt?
 If you are new to Grunt, please review our main Grunt tutorial. This can be found at 
 
-- [https://www.codio/codio/grunt-tutorial](https://www.codio.com/codio/grunt-tutorial)
+- [https://github.com/codio/tutorial_grunt_basic](https://github.com/codio/tutorial_grunt_basic)
 
 @annotation:tour register
 #Register Task Collections
