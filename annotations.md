@@ -13,19 +13,19 @@ This is the file where Grunt tasks are configured. Take a look inside.
 ###New to Grunt?
 If you are new to Grunt and are not familiar with a Grunt file, then please review our main Grunt tutorial. This can be found at 
 
-- [http://codio/codio/grunt-tutorial](http://codio/codio/grunt-tutorial)
+- [https://github.com/codio/tutorial_grunt_basic](https://github.com/codio/tutorial_grunt_basic)
 
 @annotation:tour introduction
 #Introduction
 
 ###Watch
-The goal of this tutorial is to show you the `watch` tasks. This indispensible task simply watches your files and if any files change, your files get compiled immediately.
+The goal of this tutorial is to show you the `watch` tasks. This indispensable task simply watches your files and if any files change, your files get compiled immediately.
 
 ###Newer
 However, we are also going to look at another cool Grunt tasks called `newer`. You can bolt this on so that tasks are only executed against files that have changed, rather than all files.
 
 ###Coffeescript
-So that we have a nice, real world example to play with, we are going to use a really cool physics demo written in Coffescript. This has a lot of `.coffeescript` files that are going to need compiling whenever they change.
+So that we have a nice, real world example to play with, we are going to use a really cool physics demo written in Coffeescript. This has a lot of `.coffeescript` files that are going to need compiling whenever they change.
 
 ###Advanced Use Case
 We are also going to show how our `watch` task can fire events that you can catch in your Gruntfile code.
@@ -43,11 +43,11 @@ The only file that you really need to worry about is `index.html`. If you look o
 ###New to Grunt?
 If you are new to Grunt, please review our main Grunt tutorial. This can be found at 
 
-- [http://codio/codio/grunt-tutorial](http://codio/codio/grunt-tutorial)
+- [https://github.com/codio/tutorial_grunt_basic](https://github.com/codio/tutorial_grunt_basic)
 
 @annotation:tour register
 #Register Task Collections
-We are going to register a collection of tasks. This is set up as `deafult`, so you can type `grunt` in the Console and this collection will run.
+We are going to register a collection of tasks. This is set up as `default`, so you can type `grunt` in the Console and this collection will run.
 
 As you can see, it first cleans the `compiled` folder and then runs the `coffee` task which compiles all the files (as opposed to only files that change). Try it out!
 
@@ -81,7 +81,7 @@ There is another way that you could accomplish the same thing. It is more compli
       grunt.config(['jshint', 'all'], filepath);
     });
 
-If you put this code just before your `grunt.loadNpmTasks()` code, it can catch task actions and then modify the behavior. The above example, for example, reconfigures a `jshint` task to contain the current file that has changed.
+If you put this code just before your `grunt.loadNpmTasks()` code, it can catch task actions and then modify the behaviour. The above example, for example, reconfigures a `jshint` task to contain the current file that has changed.
 
 ##Detailed Documentation
 I recommend you read up more about this as it is beyond the scope of this tutorial. Try
@@ -98,5 +98,4 @@ I recommend you read up more about this as it is beyond the scope of this tutori
 
 - [grunt.config docs](http://gruntjs.com/api/grunt.config#grunt.config)
 - [grunt-contrib-watch docs](https://npmjs.org/package/grunt-contrib-watch) and look for 'Using the watch event'.
-
 
